@@ -82,3 +82,9 @@ footer li img {
  display: block;
  margin: 0; padding: 0;}
 
+.navbar-brand img{
+    max-width:120px; 
+    margin-top: -7px; 
+    background:white;
+    border:1px solid lightsteelblue;
+}
