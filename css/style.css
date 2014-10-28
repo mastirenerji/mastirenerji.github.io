@@ -83,9 +83,10 @@ footer li img {
  margin: 0; padding: 0;}
 
 .navbar-brand img{
-    max-width:120px; 
+    max-width:120px;
+    max-height:65px; 
     margin-top: -7px; 
-    background:white;
+    background:rgba(255,255,255,0.9);
     border:1px solid lightsteelblue;
 }
 
@@ -99,5 +100,4 @@ nav li:last-child
 nav li:last-child > a {  
     color: red;  
 }
-
 
