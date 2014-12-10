@@ -1,0 +1,24 @@
+{
+  "name": "mastir",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mastirenerji/mastirenerji.github.io.git"
+  },
+  "author": "\"Tahsin Kocaman\"",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mastirenerji/mastirenerji.github.io/issues"
+  },
+  "homepage": "https://github.com/mastirenerji/mastirenerji.github.io",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-htmlmin": "^0.3.0",
+    "grunt-contrib-uglify": "~0.6.0"
+  }
+}
