@@ -1,101 +1,214 @@
-﻿h1, h2, h3 {
+﻿/*
+Custom CSS for...
+'Modern Business' HTML Theme by Start Bootstrap
+
+All Start Bootstrap themes are licensed under Apache 2.0.
+For more info and more free Bootstrap 3 HTML themes, visit http://startbootstrap.com!
+*/
+
+/* Global Styles */
+
+html,
+body
+{
+    height: 100%;
+}
+
+body
+{
+    padding-top: 50px;
+    /* body padding for fixed top nav */
+}
+
+.img-home-portfolio,
+.img-customer,
+.portfolio-item
+{
+    margin-bottom: 30px;
+}
+
+.tab-pane
+{
+    margin-top: 15px;
+}
+
+/* Page Sections */
+.section,
+.section-colored
+{
+    padding: 20px 0;
+}
+
+.section-colored
+{
+    background-color: #e1e1e1;
+    /* change this to change the background color of a colored section */
+}
+
+
+/* Half Page Height Carousel Customization */
+.carousel
+{
+    height: 35%;
+    max-height: 25rem;
+}
+
+.item,
+.active,
+.carousel-inner
+{
+    height: 100%;
+}
+
+.carousel-caption
+{
+    background: rgba(0,0,0,.5);
+}
+
+.carousel-caption .img-responsive
+{
+    width: auto;
+    height: 70px;
+}
+
+.fill
+{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+/* 404 Page Styles */
+.error-404
+{
+    font-size: 8em;
+}
+
+/* Responsive Styles */
+@media (max-width: 767px)
+{
+    .carousel
+    {
+        height: 70%;
+        /* increases the carousel height so it looks good on phones */
+    }
+}
+
+/* Custom Styles */
+
+h1,
+h2,
+h3
+{
     font-family: 'Lobster', Georgia, Times, serif;
 }
 
-p {
+p
+{
     font-family: 'PT Sans', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
 }
 
-.carousel-caption {
-    background: rgba(0,0,0,0.5);
-}
-
-.carousel {
-    max-height: 25rem;
-}
-
 /* CSS3 ROLL LINKS */
 
-.roll-link {
+.roll-link
+{
     display: inline-block;
     overflow: hidden;
     vertical-align: top;
     -webkit-perspective: 600px;
-    -moz-perspective: 600px;
-    -ms-perspective: 600px;
+       -moz-perspective: 600px;
+        -ms-perspective: 600px;
     -webkit-perspective-origin: 50% 50%;
-    -moz-perspective-origin: 50% 50%;
-    -ms-perspective-origin: 50% 50%;
+       -moz-perspective-origin: 50% 50%;
+        -ms-perspective-origin: 50% 50%;
 }
 
-    .roll-link:hover {
-        text-decoration: none;
-    }
+.roll-link:hover
+{
+    text-decoration: none;
+}
 
-    .roll-link span {
-        display: block;
-        position: relative;
-        padding: 0 2px;
-        transition: all 400ms ease;
-        transform-origin: 50% 0;
-        transform-style: preserve-3d;
-    }
+.roll-link span
+{
+    position: relative;
+    display: block;
+    padding: 0 2px;
+    transition: all 400ms ease;
+    transform-origin: 50% 0;
+    transform-style: preserve-3d;
+}
 
-    .roll-link:hover span {
-        background: #DD4D42;
-        transform: translate3d( 0px, 0px, -30px ) rotateX( 90deg );
-    }
+.roll-link:hover span
+{
+    transform: translate3d( 0px, 0px, -30px ) rotateX( 90deg );
+    background: #dd4d42;
+}
 
-    .roll-link span:after {
-        content: attr(data-title);
-        display: block;
-        position: absolute;
-        left: 0;
-        top: 0;
-        padding: 0 2px;
-        color: #fff;
-        background: #DD4D42;
-        transform-origin: 50% 0;
-        transform: translate3d( 0px, 105%, 0px ) rotateX( -90deg );
-    }
+.roll-link span:after
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    padding: 0 2px;
+    content: attr(data-title);
+    transform: translate3d( 0px, 105%, 0px ) rotateX( -90deg );
+    transform-origin: 50% 0;
+    color: #fff;
+    background: #dd4d42;
+}
 
 /* Footer */
-footer {
-    background: #222 url('data:image/svg+xml;base64,PHN2ZyBpZD0icGF0dGVybiIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiPgogIDxkZWZzPgogICAgPHBhdHRlcm4gaWQ9ImhhdGNoIiB3aWR0aD0iNCIgaGVpZ2h0PSI0IiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjQiIGhlaWdodD0iNCIgZmlsbD0iIzMzMyIgLz4KICAgICAgPHJlY3QgeD0iMiIgeT0iMCIgd2lkdGg9IjIiIGhlaWdodD0iMiIgZmlsbD0iIzNCM0IzQiIgLz4KICAgICAgPHJlY3QgeD0iMCIgeT0iMiIgd2lkdGg9IjIiIGhlaWdodD0iMiIgZmlsbD0iIzNCM0IzQiIgLz4KICAgIDwvcGF0dGVybj4KICA8L2RlZnM+CiAgPHJlY3QgZmlsbD0idXJsKCNoYXRjaCkiIHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIC8+Cjwvc3ZnPgo=') /*/media/common/pattern.svg*/;
+footer
+{
     position: relative;
-    color: #ececec;
     width: 100vw;
+    margin: 50px 0;
     margin-bottom: 0;
     padding-top: 10px;
     text-align: center;
+    color: #ececec;
+    background: #222 url('data:image/svg+xml;base64,PHN2ZyBpZD0icGF0dGVybiIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiPgogIDxkZWZzPgogICAgPHBhdHRlcm4gaWQ9ImhhdGNoIiB3aWR0aD0iNCIgaGVpZ2h0PSI0IiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjQiIGhlaWdodD0iNCIgZmlsbD0iIzMzMyIgLz4KICAgICAgPHJlY3QgeD0iMiIgeT0iMCIgd2lkdGg9IjIiIGhlaWdodD0iMiIgZmlsbD0iIzNCM0IzQiIgLz4KICAgICAgPHJlY3QgeD0iMCIgeT0iMiIgd2lkdGg9IjIiIGhlaWdodD0iMiIgZmlsbD0iIzNCM0IzQiIgLz4KICAgIDwvcGF0dGVybj4KICA8L2RlZnM+CiAgPHJlY3QgZmlsbD0idXJsKCNoYXRjaCkiIHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIC8+Cjwvc3ZnPgo=') /*/media/common/pattern.svg*/;
 }
 
-    footer ul {
-        float: left;
-        margin: 0;
-        padding: 0;
-    }
+footer ul
+{
+    float: left;
+    margin: 0;
+    padding: 0;
+}
 
-    footer li img {
-        display: block;
-        margin: 0;
-        padding: 0;
-    }
+footer li img
+{
+    display: block;
+    margin: 0;
+    padding: 0;
+}
 
-.navbar-brand img {
+.navbar-brand img
+{
     max-width: 120px;
     max-height: 65px;
     margin-top: -7px;
-    background: rgba(255,255,255,0.9);
     border: 1px solid lightsteelblue;
+    background: rgba(255,255,255,.9);
 }
 
-.carousel-caption .img-responsive {
-    height: 70px;
-    width: auto;
-}
-
-nav li:last-child {
+nav li:last-child
+{
     border-left: 2px solid #888;
+}
+
+.sidebar
+{
+    margin-top: 40px;
+}
+
+.sidebar ul
+{
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
