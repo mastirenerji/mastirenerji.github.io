@@ -212,3 +212,9 @@ nav li:last-child
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+
+/* Back to top label - overrides default bootstrap color */
+.label-default {
+background-color: #ececec;
+}
+
