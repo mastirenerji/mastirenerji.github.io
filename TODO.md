@@ -1,4 +1,5 @@
 ## TODO
+- Add link to pdf of brochure
 - Figure out a way to filter projects by clicking company buttons 
 - Complete individual projects page
 - Add Gardabani and Outotec photos
