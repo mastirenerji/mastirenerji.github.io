@@ -4,3 +4,4 @@
 - Add Gardabani and Outotec photos
 - Photos on online distributed storage or local? 
 - Add Google Analytics before publishing
+- Change .section-colored class background to .section-colored rgba(199, 199, 199, 0.5) and maybe add subtle borders
