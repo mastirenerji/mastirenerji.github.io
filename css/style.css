@@ -3,6 +3,7 @@
 html,
 body {
     height: 100%;
+    max-width:100%;
     color: #5a5a5a;
 }
 
@@ -25,7 +26,7 @@ body {
 /* Page Sections */
 .section,
 .section-colored {
-    padding: 20px 0;
+    padding: 20px;
 }
 
 .section-colored {
@@ -46,8 +47,10 @@ body {
     height: 100%;
 }
 
-/* to align images to center */
-.carousel-inner img {width: 100%;}
+    /* to align images to center */
+    .carousel-inner img {
+        width: 100%;
+    }
 
 .carousel-caption {
     background: rgba(0,0,0,.5);
@@ -149,7 +152,7 @@ footer {
     padding-top: 10px;
     text-align: center;
     color: #ececec;
-    background: url(data:image/jpg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAAKAAoDAREAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMGCv/EACoQAAIBAgMECwAAAAAAAAAAAAECAxESAAQTITFRYSIjNEFCU2JzgZGh/8QAGAEAAgMAAAAAAAAAAAAAAAAAAQMABQb/xAAhEQABAgYCAwAAAAAAAAAAAAABACERMUFRcfDB4XKRsf/aAAwDAQACEQMRAD8Ays9K7uaRhzKZtCfg6lR6XZ18GaTrNdvj1spUG5+V2IddMv5kw5aSNTldrLdTjatd9BuwXsPfSCB2d/eT9SSv3ateNo4DEqMHhGhyOVQxRRNFGzRxszRoWYopJJUEkkipJO0k78KJMS5ndNAEAwkKL//Z)
+    background: url(data:image/jpg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAAKAAoDAREAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMGCv/EACoQAAIBAgMECwAAAAAAAAAAAAECAxESAAQTITFRYSIjNEFCU2JzgZGh/8QAGAEAAgMAAAAAAAAAAAAAAAAAAQMABQb/xAAhEQABAgYCAwAAAAAAAAAAAAABACERMUFRcfDB4XKRsf/aAAwDAQACEQMRAD8Ays9K7uaRhzKZtCfg6lR6XZ18GaTrNdvj1spUG5+V2IddMv5kw5aSNTldrLdTjatd9BuwXsPfSCB2d/eT9SSv3ateNo4DEqMHhGhyOVQxRRNFGzRxszRoWYopJJUEkkipJO0k78KJMS5ndNAEAwkKL//Z);
 }
 
     footer ul {
@@ -164,13 +167,12 @@ footer {
         padding: 0;
     }
 
-footer hr {    
-    border-top: 1px solid black;  
-    border-bottom: 1px solid #575757;  
-    margin: 1px 0px 10px 0px;
-    -webkit-margin-before: 0; }
- 
-
+    footer hr {
+        border-top: 1px solid black;
+        border-bottom: 1px solid #575757;
+        margin: 1px 0px 10px 0px;
+        -webkit-margin-before: 0;
+    }
 
 .navbar-brand img {
     max-width: 120px;

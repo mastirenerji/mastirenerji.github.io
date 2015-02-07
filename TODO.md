@@ -1,5 +1,6 @@
 ## TODO
-- Add link to pdf of brochure
+- Add link to pdf of brochure (with pdf icon)
+- Add hover effect on home page projects
 - Figure out a way to filter projects by clicking company buttons 
 - Complete individual projects page
 - Add Gardabani and Outotec photos

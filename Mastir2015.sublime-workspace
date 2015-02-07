@@ -1,0 +1,403 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"projec",
+				"projects.html"
+			],
+			[
+				"02",
+				"02Kosekoy.html"
+			],
+			[
+				"09E",
+				"09Eren.html"
+			],
+			[
+				"a09",
+				"a095/"
+			],
+			[
+				"Se",
+				"Sena2456.jpg	w:480 h:360"
+			],
+			[
+				"s",
+				"Sena2349.jpg	w:480 h:360"
+			],
+			[
+				"S",
+				"Sena2227.jpg	w:480 h:360"
+			],
+			[
+				"sE",
+				"Sena2177.jpg	w:480 h:360"
+			],
+			[
+				"CIM",
+				"CIMG3010.jpg	w:480 h:360"
+			],
+			[
+				"p",
+				"photos/"
+			],
+			[
+				"pro",
+				"projects/"
+			],
+			[
+				"gue",
+				"guesses"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/User/Python3.sublime-build",
+	"command_palette":
+	{
+		"height": 104.0,
+		"selected_items":
+		[
+			[
+				"Package Control: upda",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: li",
+				"Package Control: List Packages"
+			],
+			[
+				"upd",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"update",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 464.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"-m SimpleHTTPServer",
+			"python -m SimpleHTTPServer",
+			"python",
+			"import urllib.request,os; pr='Preferences.sublime-settings'; ip='ignored_packages'; n='Package Control'; s=sublime.load_settings(pr); ig=s.get(ip); ig.append(n); s.set(ip,ig); sublime.save_settings('Preferences.sublime-settings'); pf=n+'.sublime-package'; urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler())); by=urllib.request.urlopen('https://packagecontrol.io/'+pf.replace(' ','%20')).read(); open(os.path.join(sublime.installed_packages_path(),pf),'wb').write(by); ig.remove(n); s.set(ip,ig); sublime.save_settings(pr); print('Package Control: 3.0.0 upgrade successful!')",
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/Programming/TestProjects/mastirenerji.github.io/src",
+		"/D/Programming/TestProjects/mastirenerji.github.io/src/projects",
+		"/D/Programming/TestProjects/mastirenerji.github.io/src/projects/photos",
+		"/D/Programming/TestProjects/mastirenerji.github.io/src/projects/photos/a094"
+	],
+	"file_history":
+	[
+		"/D/Programming/TestProjects/mastirenerji.github.io/dist/projects.html",
+		"/D/Programming/TestProjects/mastirenerji.github.io/src/TODO.md",
+		"/D/Programming/TestProjects/mastirenerji.github.io/src/index.html",
+		"/D/Programming/TestProjects/mastirenerji.github.io/src/projects.html",
+		"/D/Programming/TestProjects/mastirenerji.github.io/src/projeler.html",
+		"/D/Programming/TestProjects/mastirenerji.github.io/src/projects/04Izgaz.html",
+		"/D/Programming/TestProjects/mastirenerji.github.io/src/projects/02Zorlu.html",
+		"/D/Programming/TestProjects/mastirenerji.github.io/src/projects/04Entek.html",
+		"/D/Programming/TestProjects/mastirenerji.github.io/src/projects/02BisEnerji.html",
+		"/D/Programming/TestProjects/mastirenerji.github.io/src/projects/09Entek.html",
+		"/D/Programming/TestProjects/mastirenerji.github.io/src/.gitattributes",
+		"/D/Programming/TestProjects/mastirenerji.github.io/src/projects/02Kosekoy.html",
+		"/D/Programming/TestProjects/mastirenerji.github.io/src/projects/02EnerjiSa.html",
+		"/D/Programming/TestProjects/mastirenerji.github.io/src/projects/14ModernOutotec.html",
+		"/D/Programming/TestProjects/mastir/bootstrap/img/09Eren-Zon.html",
+		"/D/Programming/TestProjects/mastirenerji.github.io/src/projects/09Eren.html",
+		"/D/Programming/TestProjects/mastir/bootstrap/img/09Entek-Izmit.html",
+		"/D/Programming/TestProjects/mastirenerji.github.io/src/404.html",
+		"/D/Programming/TestProjects/mastirenerji.github.io/src/about.html",
+		"/D/Programming/TestProjects/mastirenerji.github.io/src/contact.html",
+		"/D/Programming/TestProjects/mastirenerji.github.io/src/equipment.html",
+		"/D/Programming/TestProjects/mastirenerji.github.io/src/index_tr.html",
+		"/D/Programming/TestProjects/mastirenerji.github.io/src/ekipman.html",
+		"/D/Programming/TestProjects/mastirenerji.github.io/src/hakkinda.html",
+		"/D/Programming/TestProjects/mastirenerji.github.io/src/irtibat.html",
+		"/D/Applications/Development/SublimeText/Data/Packages/User/Default (Windows).sublime-keymap",
+		"/D/Applications/SublimeText/Data/Packages/User/mongodb.sublime-build",
+		"/D/Documents/Dropbox/Various Notes/book-notes_tech_read.md",
+		"/C/Users/Tahsin/Desktop/tech.html",
+		"/D/Programming/TestProjects/test.py",
+		"/D/Programming/TestProjects/mastirenerji.github.io/src/index-text.html",
+		"/D/Programming/TestProjects/mastirenerji.github.io/src/css/bootstrap.css",
+		"/D/Programming/MongoDB/mongodb-win32-x86_64-2008plus-2.6.6/bin/mongodb.config",
+		"/D/Programming/TestProjects/mastirenerji.github.io/src/js/modern-business.js",
+		"/D/Programming/TestProjects/mastirenerji.github.io/src/index2.html",
+		"/C/Users/Tahsin/Desktop/icomoon/demo.html",
+		"/C/Users/Tahsin/Desktop/icomoon/style.css",
+		"/D/Applications/SublimeText/Data/Packages/User/Preferences.sublime-settings",
+		"/D/Applications/SublimeText/Data/Packages/Anaconda/README.md",
+		"/D/Applications/SublimeText/Data/Packages/User/ThemrFavorites.sublime-settings",
+		"/D/Applications/SublimeText/Data/Packages/SideBarEnhancements/Side Bar.sublime-settings",
+		"/D/Applications/SublimeText/Data/Packages/Schemr/SchemrFavorites.sublime-settings",
+		"/D/Applications/SublimeText/Data/Packages/Default/Preferences.sublime-settings",
+		"/D/Programming/TestProjects/mastirenerji.github.io/src/index-test.html",
+		"/D/Programming/TestProjects/mastirenerji.github.io/src/projects/presentation.html",
+		"/D/Applications/SublimeText/Data/Packages/Emmet/Emmet.sublime-settings",
+		"/D/Programming/TestProjects/test.js",
+		"/D/Programming/TestProjects/hello.py",
+		"/D/Applications/SublimeText/Data/Packages/User/Python-build.sublime-build",
+		"/E/Sync/Dropbox/bootstrap/css/bootstrap.css",
+		"/E/Sync/Dropbox/bootstrap/font/fontawesome-webfont.woff",
+		"/I/I'm trying to open a file and afterwards create a",
+		"/E/Sync/Dropbox/bootstrap/img/a22.html",
+		"/E/Sync/Dropbox/bootstrap/index.html",
+		"/E/Sync/Dropbox/bootstrap/activities.html",
+		"/E/Sync/Dropbox/bootstrap/contact.html",
+		"/E/Sync/Dropbox/bootstrap/faaliyet.html",
+		"/E/Sync/Dropbox/bootstrap/index-test.html",
+		"/E/Sync/Dropbox/bootstrap/index_tr.html",
+		"/E/Sync/Dropbox/bootstrap/index_with_slider.html",
+		"/E/Sync/Dropbox/bootstrap/profil.html",
+		"/E/Sync/Dropbox/bootstrap/profile.html",
+		"/E/Sync/Dropbox/bootstrap/profile2.html",
+		"/E/Sync/Dropbox/bootstrap/projects.html",
+		"/E/Sync/Dropbox/bootstrap/projeler.html",
+		"/E/Sync/Dropbox/bootstrap/ulasim.html",
+		"/E/Sync/Dropbox/bootstrap/img/09Entek-Izmit.html",
+		"/E/Sync/Dropbox/bootstrap/img/09Eren-Zon.html",
+		"/E/Sync/Dropbox/bootstrap/img/09Gama-Sko.html",
+		"/E/Sync/Dropbox/bootstrap/img/09TAV-Ist.html",
+		"/E/Sync/Dropbox/bootstrap/img/09ZE-KayL.html",
+		"/E/Sync/Dropbox/bootstrap/img/09ZE-Lul.html",
+		"/E/Sync/Dropbox/bootstrap/img/a023.html",
+		"/E/Sync/Dropbox/bootstrap/img/a025.html",
+		"/E/Sync/Dropbox/bootstrap/img/a026.html",
+		"/E/Sync/Dropbox/bootstrap/img/a028.html",
+		"/E/Sync/Dropbox/bootstrap/img/a041.html",
+		"/E/Sync/Dropbox/bootstrap/img/a042.html",
+		"/E/Sync/Dropbox/bootstrap/img/a043.html",
+		"/E/Sync/Dropbox/bootstrap/img/a052.html",
+		"/E/Sync/Dropbox/bootstrap/img/a053.html",
+		"/E/Sync/Dropbox/bootstrap/img/a054.html",
+		"/E/Sync/Dropbox/bootstrap/img/a124.html",
+		"/E/Sync/Dropbox/bootstrap/img/a14.html",
+		"/E/Sync/Dropbox/bootstrap/img/a15.html",
+		"/E/Sync/Dropbox/bootstrap/img/a18.html",
+		"/E/Programlar/SublimeText/Data/Packages/SideBarEnhancements/CHANGELOG"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"D:\\Programming\\TestProjects\\mastirenerji.github.io\\src",
+			"<project>",
+			"D:\\Programming\\TestProjects\\mastirenerji.github.io\\src",
+			"D:\\Programming\\TestProjects\\mastirenerji.github.io - Copy",
+			"D:\\Programming\\TestProjects\\mastirenerji.github.io",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"photos/a042",
+			"photos/a04",
+			"photos/a041/",
+			"photos/a041/en_01.jpg",
+			"equip",
+			"a094",
+			".jpg",
+			"<div ",
+			"a041",
+			"inline",
+			"http://",
+			"bg.jpg",
+			"pattern.svg",
+			"col-lg-6 col-md-6 col-xs-12 col-sm-6",
+			"col-lg-3 col-md-3 col-xs-12 col-sm-3",
+			"col-lg-12",
+			"</h1>\n                    <p>",
+			"    <link href=\"http://fonts.googleapis.com/css?family=PT+Sans\" rel=\"stylesheet\" type=\"text/css\">",
+			"    <script src=\"//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js\"></script>\n    <script>\n        window.jQuery || document.write('<script src=\"js/jquery.min.js\"><\\/script>')\n    </script>\n    <script src=\"//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js\"></script>\n    <script>\n        window.jQuery || document.write('<script src=\"js/bootstrap.min.js\"><\\/script>')\n    </script>\n    <script src=\"js/modern-business.js\"></script>",
+			"component.css",
+			"figure.effect-sadie",
+			"nxt",
+			"{",
+			"python.exe",
+			"GA01-WP545,\nGA01-WP546,\nGA01-WP547,\nGA01-WP548,\nGA01-WP549,\nGA01-WP550,\nGA01-WP551,\nGA01-WP552,\nGA01-WP553,\nGA01-WP554,\nGA01-WP561,\nGA01-WP562,\nGA01-WP563,\nGA01-WP564,\nGA01-WP718,\nGA01-WP750,\nGA01-WP751,\nGA01-WP755,\nGA01-WP756,\nGA02-WP530,\nGA02-WP531,\nGA02-WP532,\nGA02-WP702,\n",
+			"http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"col-sm-6 col-xs-12",
+			"col-sm-3 col-xs-12",
+			"    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>",
+			"    <script async src=\"//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js\"></script>\n    <script>\n        window.jQuery || document.write('<script src=\"js/jquery.min.js\"><\\/script>')\n    </script>\n    <script async src=\"//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js\"></script>\n    <script>\n        window.jQuery || document.write('<script src=\"js/bootstrap.min.js\"><\\/script>')\n    </script>\n    <script async src=\"js/modern-business.js\"></script>",
+			"http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.589238845144,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 217.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "Mastir2015.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"D:\\Programming\\TestProjects\\mastirenerji.github.io\\src\\Mastir2013.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 223.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
