@@ -1,0 +1,59 @@
+.navbar-brand {
+  height: 45px;
+  padding: 10px 15px; }
+
+.navbar-brand img {
+  max-width: 120px;
+  max-height: 65px;
+  margin-top: -7px;
+  border: 1px solid lightsteelblue;
+  background: rgba(255, 255, 255, 0.9); }
+
+/* Bootstrap override */
+.bg-dark {
+  background-color: rgba(53, 59, 65, 0.9) !important; }
+
+nav li:last-child {
+  border-left: 2px solid #888;
+  margin-left: 5px; }
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
+
+.spacer {
+  display: block;
+  text-align: center; }
+
+.sec-grey {
+  background-color: grey; }
+
+.card-deck {
+  margin: 15px 0 15px 0; }
+
+footer {
+  background: #222 url("data:image/svg+xml;base64,PHN2ZyBpZD0icGF0dGVybiIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiPgogIDxkZWZzPgogICAgPHBhdHRlcm4gaWQ9ImhhdGNoIiB3aWR0aD0iNCIgaGVpZ2h0PSI0IiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjQiIGhlaWdodD0iNCIgZmlsbD0iIzMzMyIgLz4KICAgICAgPHJlY3QgeD0iMiIgeT0iMCIgd2lkdGg9IjIiIGhlaWdodD0iMiIgZmlsbD0iIzNCM0IzQiIgLz4KICAgICAgPHJlY3QgeD0iMCIgeT0iMiIgd2lkdGg9IjIiIGhlaWdodD0iMiIgZmlsbD0iIzNCM0IzQiIgLz4KICAgIDwvcGF0dGVybj4KICA8L2RlZnM+CiAgPHJlY3QgZmlsbD0idXJsKCNoYXRjaCkiIHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIC8+Cjwvc3ZnPgo=");
+  position: relative;
+  color: #ececec;
+  margin-bottom: 0;
+  padding-top: 10px;
+  text-align: center; }
+
+footer ul {
+  float: left;
+  margin: 0;
+  padding: 0; }
+
+footer li img {
+  display: block;
+  margin: 0;
+  padding: 0; }
+
+footer hr {
+  border-top: 1px solid black;
+  border-bottom: 1px solid #575757;
+  margin: 1px 0px 10px 0px;
+  -webkit-margin-before: 0; }

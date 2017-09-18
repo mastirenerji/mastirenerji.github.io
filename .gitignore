@@ -2,6 +2,9 @@
 Thumbs.db
 ehthumbs.db
 
+# Notes
+notes.txt
+
 # Folder config file
 Desktop.ini
 
@@ -34,3 +37,9 @@ Icon
 # Files that might appear on external disk
 .Spotlight-V100
 .Trashes
+
+# Dependency directories
+node_modules/
+
+# Optional npm cache directory
+.npm
