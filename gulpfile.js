@@ -2,7 +2,7 @@ const gulp = require("gulp"),
   browserSync = require("browser-sync").create(),
   sass = require("gulp-sass"),
   htmlmin = require("gulp-htmlmin"),
-  imagemin = require('gulp-imagemin');
+  imagemin = require("gulp-imagemin");
 
 // Compile Sass & Inject Into Browser
 gulp.task("sass", function() {
@@ -52,16 +52,16 @@ gulp.task("fa", function() {
     .pipe(gulp.dest("src/css"));
 });
 
-gulp.task('minify-html', function() {
-  return gulp.src('src/*.html')
+gulp.task("minify-html", function() {
+  return gulp.src("src/**/*.html")
     .pipe(htmlmin({collapseWhitespace: true}))
-    .pipe(gulp.dest('dist'));
+    .pipe(gulp.dest("dist"));
 });
 
-gulp.task('minify-img', function() {
-  return  gulp.src('src/img/*')
+gulp.task("minify-img", function() {
+  return  gulp.src("src/img/**")
     .pipe(imagemin())
-    .pipe(gulp.dest('dist/img'))
+    .pipe(gulp.dest("dist/img"))
 });
 
 gulp.task("default", ["js", "serve", "fa", "fonts", "minify-html", "minify-img"]);
