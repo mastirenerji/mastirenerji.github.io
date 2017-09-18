@@ -1,7 +1,7 @@
 {
-  "name": "bs4starter",
+  "name": "Mastir-2017-site-update",
   "version": "1.0.0",
-  "description": "Bootstrap 4 starter workflow",
+  "description": "Mastir Enerji site update",
   "main": "index.js",
   "scripts": {
     "start": "gulp",
@@ -11,7 +11,7 @@
     "build:images": "npm run imagemin",
     "build": "npm run build:html && npm run build:js && npm run build:css && npm run build:imagemin"
   },
-  "author": "Brad Traversy",
+  "author": "Tahsin Kocaman",
   "license": "MIT",
   "dependencies": {
     "bootstrap": "4.0.0-beta",
@@ -22,6 +22,7 @@
   "devDependencies": {
     "browser-sync": "^2.18.13",
     "gulp": "^3.9.1",
+    "gulp-gh-pages": "^0.5.4",
     "gulp-htmlmin": "^3.0.0",
     "gulp-imagemin": "^3.3.0",
     "gulp-sass": "^3.1.0",
