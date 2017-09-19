@@ -1,4 +1,7 @@
 // Main Sass File
+body {
+  padding-top: 60px;
+}
 
 .navbar-brand {
   height: 45px;
@@ -33,6 +36,8 @@ nav li:last-child {
 .spacer {
   display: block;
   text-align: center;
+  box-shadow: 5px 4px 25px 0px rgba(180, 187, 193, 0.75);
+  padding: 15px 0;
 }
 
 .sec-grey {

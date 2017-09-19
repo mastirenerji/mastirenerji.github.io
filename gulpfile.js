@@ -31,15 +31,30 @@ gulp.task("js", function() {
 // Watch Sass & Serve
 gulp.task("serve", ["sass"], function() {
   browserSync.init({
-    server: "./dist"
+    server: "./src"
   });
 
   gulp.watch(
     ["node_modules/bootstrap/scss/bootstrap.scss", "src/scss/*.scss"],
     ["sass"]
   );
-  gulp.watch("dist/*.html").on("change", browserSync.reload);
+  gulp.watch("src/**/*.html").on("change", browserSync.reload);
 });
+
+// gulp.task('browser-sync', function () {
+//    var files = [
+//       'src/**/*.html',
+//       'src/**/*.css',
+//       'src/**/*.jpg',
+//       'src/**/*.js'
+//    ];
+
+//    browserSync.init(files, {
+//       server: {
+//          baseDir: './src'
+//       }
+//    });
+// });
 
 // Move Fonts to src/fonts
 gulp.task("fonts", function() {
@@ -69,9 +84,14 @@ gulp.task("minify-img", function() {
     .pipe(gulp.dest("dist/img"))
 });
 
+gulp.task("favicon", function() {
+  return  gulp.src("src/favicon.ico")
+    .pipe(gulp.dest("dist"))
+});
+
 /**
  * Push build to gh-pages
- * To make it effective add "deploy" to default task
+ * To make it effective, add "deploy" to default task
  */
 gulp.task("deploy", function () {
   return gulp.src("./dist/**/*")
@@ -79,6 +99,6 @@ gulp.task("deploy", function () {
 });
 
 // Build
-gulp.task('build', ['minify-html', 'minify-img', 'fa', 'fonts', 'js', 'sass']);
+gulp.task('build', ['minify-html', 'minify-img', 'fa', 'fonts', 'js', 'sass', 'favicon']);
 
 gulp.task("default", ["js", "serve", "fa", "fonts", "minify-html", "minify-img"]);
