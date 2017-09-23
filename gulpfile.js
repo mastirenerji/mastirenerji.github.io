@@ -3,118 +3,106 @@ const gulp = require("gulp"),
   sass = require("gulp-sass"),
   htmlmin = require("gulp-htmlmin"),
   imagemin = require("gulp-imagemin");
-// deploy = require('gulp-gh-pages');
 
+// Transpile Sass, TS, JS, etc. source files
 // Compile Sass & Inject Into Browser
-gulp.task("sass", function() {
-  return (gulp
-      .src(["node_modules/bootstrap/scss/bootstrap.scss", "src/scss/*.scss"])
-      .pipe(sass())
-      .pipe(gulp.dest("src/css"))
-      // .pipe(gulp.dest("dist/css"))
-      .pipe(browserSync.stream()) );
+gulp.task("styles", function() {
+  return gulp
+    .src(["node_modules/bootstrap/scss/bootstrap.scss", "src/scss/*.scss"])
+    .pipe(sass())
+    .pipe(gulp.dest("dist/css"));
+  // .pipe(gulp.dest("dist/css"))
 });
 
 // Move JS Files to src/js
-gulp.task("js", function() {
-  return (gulp
-      .src([
-        "node_modules/bootstrap/dist/js/bootstrap.min.js",
-        "node_modules/jquery/dist/jquery.min.js",
-        "node_modules/popper.js/dist/umd/popper.min.js"
-      ])
-      .pipe(gulp.dest("src/js"))
-      // .pipe(gulp.dest("dist/js"))
-      .pipe(browserSync.stream()) );
+gulp.task("scripts", function() {
+  return gulp
+    .src([
+      "node_modules/bootstrap/dist/js/bootstrap.min.js",
+      "node_modules/jquery/dist/jquery.min.js",
+      "node_modules/popper.js/dist/umd/popper.min.js"
+    ])
+    .pipe(gulp.dest("dist/js"));
 });
-
-// Watch Sass & Serve
-gulp.task("serve", ["sass"], function() {
-  browserSync.init({
-    server: "./src"
-  });
-
-  gulp.watch(
-    ["node_modules/bootstrap/scss/bootstrap.scss", "src/scss/*.scss"],
-    ["sass"]
-  );
-  gulp.watch("src/**/*.html").on("change", browserSync.reload);
-});
-
-// gulp.task('browser-sync', function () {
-//    var files = [
-//       'src/**/*.html',
-//       'src/**/*.css',
-//       'src/**/*.jpg',
-//       'src/**/*.js'
-//    ];
-
-//    browserSync.init(files, {
-//       server: {
-//          baseDir: './src'
-//       }
-//    });
-// });
 
 // Move Fonts to src/fonts
 gulp.task("fonts", function() {
   return gulp
     .src("node_modules/font-awesome/fonts/*")
-    .pipe(gulp.dest("src/fonts"));
-  // .pipe(gulp.dest("dist/fonts"));
+    .pipe(gulp.dest("dist/fonts"));
 });
 
 // Move Font Awesome CSS to src/css
-gulp.task("fa", function() {
+gulp.task("fa", ["fonts"], function() {
   return gulp
     .src("node_modules/font-awesome/css/font-awesome.min.css")
-    .pipe(gulp.dest("src/css"));
-  // .pipe(gulp.dest("dist/css"));
+    .pipe(gulp.dest("dist/css"));
 });
 
-gulp.task("minify-html", function() {
+gulp.task("fonts", function() {
+  return gulp
+    .src("node_modules/font-awesome/fonts/*")
+    .pipe(gulp.dest("dist/fonts"));
+});
+
+// Optimize files for serving
+gulp.task("html-min", function() {
   return gulp
     .src("src/**/*.html")
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest("dist"));
 });
 
-gulp.task("minify-img", function() {
+gulp.task("images", function() {
   return gulp
     .src("src/img/**")
-    .pipe(imagemin())
+    .pipe(
+      imagemin({ optimizationLevel: 5, progressive: true, interlaced: true })
+    )
     .pipe(gulp.dest("dist/img"));
 });
 
-gulp.task("favicon", function() {
-  return gulp.src("src/favicon.ico").pipe(gulp.dest("dist"));
-});
+// Watch Sass & Serve
+// gulp.task("serve", ["styles"], function() {
+//   browserSync.init({
+//     server: "./dist"
+//   });
 
-/**
- * Push build to gh-pages
- * To make it effective, add "deploy" to default task
- */
-// gulp.task("deploy", function () {
-//   return gulp.src("./dist/**/*")
-//     .pipe(deploy())
+//   gulp.watch(
+//     ["node_modules/bootstrap/scss/bootstrap.scss", "src/scss/*.scss"],
+//     ["styles"]
+//   );
+//   gulp.watch("dist/**/*.{html, css}").on("change", browserSync.reload);
 // });
 
-// Build
-gulp.task("build", [
-  "minify-html",
-  "minify-img",
-  "fa",
-  "fonts",
-  "js",
-  "sass",
-  "favicon"
-]);
+gulp.task("browser-sync", function() {
+  var files = ["**/*.html", "**/*.css", "**/*.{png,jpg,gif}"];
 
-gulp.task("default", [
-  "js",
-  "serve",
-  "fa",
-  "fonts",
-  "minify-html",
-  "minify-img"
-]);
+  browserSync.init(files, {
+    // logLevel: "debug",
+    // proxy: "projectname.dev",
+    // tunnel: "projectname",
+    // serveStatic: ['./src/'],
+    // baseDir: "./",
+    xip: true,
+    server: "./dist/"
+  });
+});
+
+gulp.task("build", ["html-min", "images", "fa", "fonts", "scripts", "styles"]);
+
+gulp.task("default", function() {
+  gulp.start("browser-sync", "styles", "scripts", "images", "html-min", "fa");
+
+  // Watch .scss files
+  gulp.watch("src/scss/**/*.scss", ["styles"]);
+
+  // Watch .js files
+  gulp.watch("src/js/**/*.js", ["scripts"]);
+
+  // Watch image files
+  gulp.watch("src/img/**/*", ["images"]);
+
+  // Watch image files
+  gulp.watch("src/**/*.html", ["html-min"]);
+});

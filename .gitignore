@@ -3,7 +3,7 @@ Thumbs.db
 ehthumbs.db
 
 # Notes
-notes.txt
+notes.md
 
 # Folder config file
 Desktop.ini
@@ -29,7 +29,8 @@ $RECYCLE.BIN/
 .LSOverride
 
 # Icon must ends with two \r.
-Icon
+Icon
+
 
 # Thumbnails
 ._*
