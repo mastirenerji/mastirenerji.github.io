@@ -49,7 +49,7 @@ gulp.task("fonts", function() {
 gulp.task("html-min", function() {
   return gulp
     .src("src/**/*.html")
-    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(htmlmin({ collapseWhitespace: true, removeComments: true }))
     .pipe(gulp.dest("dist"));
 });
 
@@ -84,7 +84,6 @@ gulp.task("browser-sync", function() {
     // tunnel: "projectname",
     // serveStatic: ['./src/'],
     // baseDir: "./",
-    xip: true,
     server: "./dist/"
   });
 });
