@@ -4,13 +4,12 @@ body {
 .navbar-brand {
   height: 45px;
   padding: 10px 15px; }
-
-.navbar-brand img {
-  max-width: 120px;
-  max-height: 65px;
-  margin-top: -7px;
-  border: 1px solid lightsteelblue;
-  background: rgba(255, 255, 255, 0.9); }
+  .navbar-brand img {
+    max-width: 120px;
+    max-height: 65px;
+    margin-top: -7px;
+    border: 1px solid lightsteelblue;
+    background: rgba(255, 255, 255, 0.9); }
 
 /* Bootstrap override */
 .bg-dark {
@@ -54,12 +53,11 @@ footer {
     display: block;
     margin: 0;
     padding: 0; }
-
-footer hr {
-  border-top: 1px solid black;
-  border-bottom: 1px solid #575757;
-  margin: 1px 0px 10px 0px;
-  -webkit-margin-before: 0; }
+  footer hr {
+    border-top: 1px solid black;
+    border-bottom: 1px solid #575757;
+    margin: 1px 0px 10px 0px;
+    -webkit-margin-before: 0; }
 
 @-webkit-keyframes bounce {
   0%,
