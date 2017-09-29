@@ -1,1 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg"><defs><pattern id="a" width="4" height="4" patternUnits="userSpaceOnUse"><path fill="#333" d="M0 0h4v4H0z"/><path fill="#3B3B3B" d="M2 0h2v2H2zM0 2h2v2H0z"/></pattern></defs><rect fill="url(#a)" width="100%" height="100%"/></svg>
+<svg id="pattern" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" version="1.1">
+  <defs>
+    <pattern id="hatch" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="4" height="4" fill="#333" />
+      <rect x="2" y="0" width="2" height="2" fill="#3B3B3B" />
+      <rect x="0" y="2" width="2" height="2" fill="#3B3B3B" />
+    </pattern>
+  </defs>
+  <rect fill="url(#hatch)" x="0" y="0" width="100%" height="100%" />
+</svg>

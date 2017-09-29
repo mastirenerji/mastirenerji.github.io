@@ -2,11 +2,12 @@ const gulp = require("gulp"),
   browserSync = require("browser-sync").create(),
   sass = require("gulp-sass"),
   htmlmin = require("gulp-htmlmin"),
-  imagemin = require("gulp-imagemin");
+  imagemin = require("gulp-imagemin"),
+  imageminMozjpeg = require('imagemin-mozjpeg');
 
 // Transpile Sass, TS, JS, etc. source files
 // Compile Sass & Inject Into Browser
-gulp.task("styles", function() {
+gulp.task("styles", function () {
   return gulp
     .src(["node_modules/bootstrap/scss/bootstrap.scss", "src/scss/*.scss"])
     .pipe(sass())
@@ -15,7 +16,7 @@ gulp.task("styles", function() {
 });
 
 // Move JS Files to src/js
-gulp.task("scripts", function() {
+gulp.task("scripts", function () {
   return gulp
     .src([
       "node_modules/bootstrap/dist/js/bootstrap.min.js",
@@ -26,39 +27,43 @@ gulp.task("scripts", function() {
 });
 
 // Move Fonts to src/fonts
-gulp.task("fonts", function() {
+gulp.task("fonts", function () {
   return gulp
     .src("node_modules/font-awesome/fonts/*")
     .pipe(gulp.dest("dist/fonts"));
 });
 
 // Move Font Awesome CSS to src/css
-gulp.task("fa", ["fonts"], function() {
+gulp.task("fa", ["fonts"], function () {
   return gulp
     .src("node_modules/font-awesome/css/font-awesome.min.css")
     .pipe(gulp.dest("dist/css"));
 });
 
-gulp.task("fonts", function() {
+gulp.task("fonts", function () {
   return gulp
     .src("node_modules/font-awesome/fonts/*")
     .pipe(gulp.dest("dist/fonts"));
 });
 
 // Optimize files for serving
-gulp.task("html-min", function() {
+gulp.task("html-min", function () {
   return gulp
     .src("src/**/*.html")
-    .pipe(htmlmin({ collapseWhitespace: true, removeComments: true }))
+    .pipe(htmlmin({
+      collapseWhitespace: true,
+      removeComments: true
+    }))
     .pipe(gulp.dest("dist"));
 });
 
-gulp.task("images", function() {
+gulp.task("images", function () {
   return gulp
     .src("src/img/**")
     .pipe(
-      imagemin({ optimizationLevel: 5, progressive: true, interlaced: true })
-    )
+      imagemin([imageminMozjpeg({
+        quality: 80
+      })]))
     .pipe(gulp.dest("dist/img"));
 });
 
@@ -75,7 +80,7 @@ gulp.task("images", function() {
 //   gulp.watch("dist/**/*.{html, css}").on("change", browserSync.reload);
 // });
 
-gulp.task("browser-sync", function() {
+gulp.task("browser-sync", function () {
   var files = ["**/*.html", "**/*.css", "**/*.{png,jpg,gif}"];
 
   browserSync.init(files, {
@@ -90,7 +95,7 @@ gulp.task("browser-sync", function() {
 
 gulp.task("build", ["html-min", "images", "fa", "fonts", "scripts", "styles"]);
 
-gulp.task("default", function() {
+gulp.task("default", function () {
   gulp.start("browser-sync", "styles", "scripts", "images", "html-min", "fa");
 
   // Watch .scss files
