@@ -11,6 +11,10 @@ body {
     border: 1px solid lightsteelblue;
     background: rgba(255, 255, 255, 0.9); }
 
+/* Bootstrap temp fix for picture and img-thumbnail */
+picture {
+  display: inline-block; }
+
 /* Bootstrap override */
 .bg-dark {
   background-color: rgba(53, 59, 65, 0.9) !important; }
