@@ -11,16 +11,23 @@
   <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
-  <link rel="manifest" href="img/favicons/manifest.json">
+  <link rel="manifest" href="manifest.json">
   <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
 
   <!-- 3rd Party CDNs -->
-  <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> -->
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">   -->
+  <!-- Prefetch DNS: https://www.keycdn.com/support/prefetching/ -->
+  <link rel="dns-prefetch" href="//maxcdn.bootstrapcdn.com/">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+    crossorigin="anonymous">
+  <!-- Preconnect: https://www.keycdn.com/support/preconnect/ -->
+  <link rel="preconnect" href="https://maxcdn.bootstrapcdn.com" crossorigin>
+
 
   <!-- local 3rd Party Libraries -->
-  <link href="css/font-awesome.min.css" rel="stylesheet">
-  <link href="css/bootstrap.css" rel="stylesheet">
+  <!-- <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/bootstrap.css" rel="stylesheet"> -->
   <link href="css/style.css" rel="stylesheet">
 
   <title>Mastır Enerji | Home</title>
@@ -151,7 +158,7 @@
     <div class="row featurette bg-light">
 
       <div class="col-md-5">
-        <picture class="img-thumbnail img-fluid">
+        <picture>
           <source srcset="img/projects/16_Kirikkale_BOP/bop_scaled.webp" type="image/webp">
           <img class="img-thumbnail img-fluid" src="img/projects/16_Kirikkale_BOP/bop_scaled.JPG" alt="">
         </picture>
@@ -287,6 +294,18 @@
   <!-- Bootstrap.js local fallback -->
   <script>
     window.jQuery || document.write('<script src="js/bootstrap.min.js"><\/script>')
+  </script>
+  <script>
+    if (navigator.serviceWorker.controller) {
+      console.log('[PWA Builder] active service worker found, no need to register')
+    } else {
+      //Register the ServiceWorker
+      navigator.serviceWorker.register('sw.js', {
+        scope: './'
+      }).then(function (reg) {
+        console.log('Service worker has been registered for scope:' + reg.scope);
+      });
+    }
   </script>
 
 </body>
