@@ -26,6 +26,10 @@ picture {
   background-color: rgba(53, 59, 65, 0.9) !important;
 }
 
+.carousel-inner {
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.3);
+}
+
 nav li:last-child {
   border-left: 2px solid #888;
   margin-left: 5px;
