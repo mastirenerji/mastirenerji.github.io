@@ -19,6 +19,10 @@
     <link href="css/bootstrap.css" rel="stylesheet"> -->
     <link href="css/style.css" rel="stylesheet">
     <style>
+        .epc {
+            margin: 10px 0;
+        }
+
         .epc img {
             height: 1.5em;
             margin-right: 0.5em;
@@ -71,11 +75,13 @@
     <!-- Companies -->
     <div class="section">
         <div class="container">
-            <h2 class="page-header text-center">Companies We Have Worked With</h2>
-            <div class="row">
-                <div class="card epc col-md-12">
+            <div class="row epc">
+                <div class="col-md-12">
+                    <h2 class="spacer">Companies We Have Worked With</h2>
+                </div>
+                <div class="card col-md-12">
                     <div class="card-header">
-                        EPCs and Equipment Manufacturers We Have Worked With:
+                        EPCs and equipment manufacturers:
                     </div>
                     <div class="card-body text-center">
                         <img src="img/logos/Aalborg_Engineering_logo.png" alt="Aalborg Engineering" data-toggle="tooltip" data-placement="top" title="Aalborg Engineering">
@@ -95,9 +101,9 @@
                         <img src="img/logos/vogt.png" alt="" data-toggle="tooltip" data-placement="top" title="Vogt">
                     </div>
                 </div>
-                <div class="card epc col-md-12" style="margin-bottom: 2em;">
+                <div class="card col-md-12" style="margin-bottom: 2em;">
                     <div class="card-header">
-                        Plant Operators We Have Worked With:
+                        Plant operators:
                     </div>
                     <div class="card-body text-center">
                         <img src="img/logos/age_enerji.png" alt="AGE Enerji" data-toggle="tooltip" data-placement="top" title="AGE Enerji">
@@ -124,7 +130,9 @@
     <!-- /.container -->
     <div class="container">
         <!-- Projects -->
-        <h2 class="page-header text-center">Reference Projects</h2>
+        <div class="col-md-12">
+            <h2 class="spacer">Reference Projects</h2>
+        </div>
         <div class="input-group">
             <span class="input-group-addon">Filter</span>
 
@@ -1778,7 +1786,8 @@
                         <br>
                         <a class="btn btn-default btn-xs" href="#">Back to top
                             <i class="fa fa-arrow-up"></i>
-                        </a></p>
+                        </a>
+                    </p>
                 </div>
             </div>
         </div>
@@ -1795,8 +1804,8 @@
         crossorigin="anonymous"></script>
 
     <!-- Bootstrap.js CDN -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
-        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+    crossorigin="anonymous"></script>
     <!-- Bootstrap.js local fallback -->
     <script>
         window.jQuery || document.write('<script src="js/bootstrap.min.js"><\/script>')
