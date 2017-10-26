@@ -3,8 +3,7 @@
   X-XSS-Protection: 1; mode=block
   X-Content-Type-Options: nosniff
   Content-Security-Policy: 
-    object-src data: 'unsafe-eval'
     default-src 'self' https:; 
-    script-src 'self' https: 'unsafe-inline' 'unsafe-eval';
-    style-src 'self' https://maxcdn.bootstrapcdn.com 'unsafe-inline';
+    script-src 'self' https: 'unsafe-inline';
+    style-src 'self' https: 'unsafe-inline';
     img-src 'self' data:
