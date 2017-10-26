@@ -4,8 +4,7 @@ const gulp = require("gulp"),
   gulpStylelint = require("gulp-stylelint"),
   htmlmin = require("gulp-htmlmin"),
   imagemin = require("gulp-imagemin"),
-  imageminMozjpeg = require("imagemin-mozjpeg"),
-  html5Lint = require("gulp-html5-lint");
+  imageminMozjpeg = require("imagemin-mozjpeg");
 
 // Transpile Sass, TS, JS, etc. source files
 // Compile Sass & Inject Into Browser
@@ -120,10 +119,6 @@ gulp.task("sw", ["sw-manifest", "sw-js"]);
 
 gulp.task("netlify_headers", function() {
   return gulp.src("./src/_headers").pipe(gulp.dest("dist/"));
-});
-
-gulp.task("html5-lint", function() {
-  return gulp.src("./src/*.html").pipe(html5Lint());
 });
 
 gulp.task("build", [
