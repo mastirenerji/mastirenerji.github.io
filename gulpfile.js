@@ -109,7 +109,7 @@ gulp.task("browser-sync", function() {
 
 gulp.task("sw", function() {
   return gulp
-    .src(["src/site.webmanifest", "src/sw.js", "_headers"])
+    .src(["src/site.webmanifest", "src/sw.js", "src/_headers"])
     .pipe(gulp.dest("dist/"));
 });
 
