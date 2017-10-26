@@ -3,7 +3,7 @@
   "short_name": "Mastir",
   "description":
     "Mastir Enerji is a major Power Plant installation company operating in Turkey and neighbouring countries",
-  "start_url": "./?utm_source=web_app_manifest",
+  "start_url": "/",
   "display": "standalone",
   "orientation": "any",
   "lang": "en",
