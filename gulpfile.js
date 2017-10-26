@@ -107,15 +107,17 @@ gulp.task("browser-sync", function() {
   });
 });
 
-gulp.task("sw-manifest", function() {
-  return gulp.src("src/site.webmanifest").pipe(gulp.dest("dist/"));
+gulp.task("sw", function() {
+  return gulp
+    .src(["src/site.webmanifest", "src/sw.js", "_headers"])
+    .pipe(gulp.dest("dist/"));
 });
 
-gulp.task("sw-js", function() {
-  return gulp.src("src/sw.js").pipe(gulp.dest("dist/"));
-});
+// gulp.task("sw-js", function() {
+//   return gulp.src("src/sw.js").pipe(gulp.dest("dist/"));
+// });
 
-gulp.task("sw", ["sw-manifest", "sw-js"]);
+// gulp.task("sw", ["sw-manifest", "sw-js"]);
 
 gulp.task("build", [
   "html-min",
@@ -128,7 +130,15 @@ gulp.task("build", [
 ]);
 
 gulp.task("default", function() {
-  gulp.start("browser-sync", "html-min", "scripts", "images", "fa", "sw");
+  gulp.start(
+    "browser-sync",
+    "html-min",
+    "scripts",
+    "images",
+    "fa",
+    "styles",
+    "sw"
+  );
 
   // Watch .scss files
   gulp.watch("src/scss/**/*.scss", ["styles"]);
