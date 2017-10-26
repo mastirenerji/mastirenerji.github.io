@@ -2,7 +2,6 @@
   X-Frame-Options: DENY
   X-XSS-Protection: 1; mode=block
   X-Content-Type-Options: nosniff
-  Referrer-Policy: origin-when-cross-origin
   Content-Security-Policy: 
     object-src data: 'unsafe-eval'
     default-src 'self' https:; 
