@@ -117,10 +117,6 @@ gulp.task("sw-js", function() {
 
 gulp.task("sw", ["sw-manifest", "sw-js"]);
 
-gulp.task("netlify_headers", function() {
-  return gulp.src("./src/_headers").pipe(gulp.dest("dist/"));
-});
-
 gulp.task("build", [
   "html-min",
   "images",
@@ -128,8 +124,7 @@ gulp.task("build", [
   "fonts",
   "scripts",
   "styles",
-  "sw",
-  "netlify_headers"
+  "sw"
 ]);
 
 gulp.task("default", function() {
