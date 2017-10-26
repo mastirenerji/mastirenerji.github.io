@@ -4,7 +4,8 @@ const gulp = require("gulp"),
   gulpStylelint = require("gulp-stylelint"),
   htmlmin = require("gulp-htmlmin"),
   imagemin = require("gulp-imagemin"),
-  imageminMozjpeg = require("imagemin-mozjpeg");
+  imageminMozjpeg = require("imagemin-mozjpeg"),
+  html5Lint = require("gulp-html5-lint");
 
 // Transpile Sass, TS, JS, etc. source files
 // Compile Sass & Inject Into Browser
@@ -108,7 +109,7 @@ gulp.task("browser-sync", function() {
 });
 
 gulp.task("sw-manifest", function() {
-  return gulp.src("src/manifest.json").pipe(gulp.dest("dist/"));
+  return gulp.src("src/site.webmanifest").pipe(gulp.dest("dist/"));
 });
 
 gulp.task("sw-js", function() {
@@ -117,6 +118,14 @@ gulp.task("sw-js", function() {
 
 gulp.task("sw", ["sw-manifest", "sw-js"]);
 
+gulp.task("netlify_headers", function() {
+  return gulp.src("./src/_headers").pipe(gulp.dest("dist/"));
+});
+
+gulp.task("html5-lint", function() {
+  return gulp.src("./src/*.html").pipe(html5Lint());
+});
+
 gulp.task("build", [
   "html-min",
   "images",
@@ -124,11 +133,12 @@ gulp.task("build", [
   "fonts",
   "scripts",
   "styles",
-  "sw"
+  "sw",
+  "netlify_headers"
 ]);
 
 gulp.task("default", function() {
-  gulp.start("browser-sync", "scripts", "images", "html-min", "fa", "sw");
+  gulp.start("browser-sync", "html-min", "scripts", "images", "fa", "sw");
 
   // Watch .scss files
   gulp.watch("src/scss/**/*.scss", ["styles"]);
