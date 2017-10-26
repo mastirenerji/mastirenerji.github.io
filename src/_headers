@@ -4,6 +4,8 @@
   X-Content-Type-Options: nosniff
   Referrer-Policy: origin-when-cross-origin
   Content-Security-Policy: 
-    object-src 'none'; 
+    object-src data: 'unsafe-eval'
     frame-ancestors 'none'; 
-    default-src 'self' https:; script-src 'self' https: 'unsafe-inline'; style-src 'self' https: 'unsafe-inline'
+    default-src 'self' https:; 
+    script-src 'self' https: 'unsafe-inline'; 
+    style-src 'self' https: 'unsafe-inline'
