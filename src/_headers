@@ -8,4 +8,4 @@
     frame-ancestors 'none'; 
     default-src 'self' https:; 
     script-src 'self' https: 'unsafe-inline'; 
-    style-src 'self' https: 'unsafe-inline'
+    style-src 'self' https: 'unsafe-inline';
