@@ -1,5 +1,5 @@
 {
-  "name": "Mastir_2017_site_update",
+  "name": "mastir_2017_site_update",
   "version": "1.0.0",
   "description": "Mastir Enerji site update",
   "main": "index.js",
@@ -9,8 +9,7 @@
     "build:js": "npm run jshint && npm run uglify",
     "build:css": "npm run sass",
     "build:images": "npm run imagemin",
-    "build":
-      "npm run build:html && npm run build:js && npm run build:css && npm run build:imagemin"
+    "build": "npm run build:html && npm run build:js && npm run build:css && npm run build:imagemin"
   },
   "author": "Tahsin Kocaman",
   "license": "MIT",
